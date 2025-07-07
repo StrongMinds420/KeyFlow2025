@@ -1,0 +1,43 @@
+@keyframes fade-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-slide-in {
+    animation: fade-slide-in 1s ease-out forwards;
+}
+
+/* Pulsing dot for scroll down */
+@keyframes pulse-dot {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+}
+.animate-pulse-dot {
+    animation: pulse-dot 1.5s infinite ease-in-out;
+}
+
+/* Background grid pattern */
+.grid-pattern {
+    background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+/* Hero background abstract shapes animation */
+@keyframes rotate-bg {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.animated-shape-1 {
+    animation: rotate-bg 60s linear infinite;
+}
+.animated-shape-2 {
+    animation: rotate-bg 80s linear infinite reverse;
+}
