@@ -62,7 +62,7 @@
 
             <!-- Mobile Menu Button (Hamburger Icon) -->
             <div class="md:hidden">
-                <button class="text-gray-300 hover:text-yellow-400 focus:outline-none" id="mobile-menu-button">
+                <button class="text-gray-300 hover:text-yellow-400 focus:outline-none">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
@@ -355,26 +355,5 @@
         </div>
     </footer>
 
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        function openMobileMenu() {
-            mobileMenu.classList.add('opacity-100');
-            mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
-        }
-
-        function closeMobileMenu() {
-            mobileMenu.classList.remove('opacity-100');
-            mobileMenu.classList.add('opacity-0', 'pointer-events-none');
-        }
-
-        mobileMenuButton.addEventListener('click', openMobileMenu);
-
-        // Optional: Close menu when clicking outside or pressing ESC
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeMobileMenu();
-        });
-    </script>
 </body>
 </html>
